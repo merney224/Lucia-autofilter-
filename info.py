@@ -53,7 +53,7 @@ DB_CHANGE_LIMIT = int(environ.get('DB_CHANGE_LIMIT', "432"))
 
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MoviepubGroup')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CFUpdates')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/CFcontactbot')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/parthip_jr')
 UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/moviemediachannel')
 
 AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "-1002668780018") # add multiple channels here, separated by single space
