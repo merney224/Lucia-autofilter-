@@ -15,9 +15,9 @@ def is_enabled(value, default):
 
 
 SESSION = environ.get('SESSION', 'media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '19481274'))
+API_HASH = environ.get('API_HASH', 'edbb4d162c4871c25ccd6f7179dad8cf')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8253314933:AAEzXTOrKKnMFEMa5vJVBsnG4H0VSLlCiVk")
 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
@@ -31,8 +31,8 @@ FSUB_IMG = (environ.get('FSUB_IMG', 'https://i.ibb.co/cShkPjcZ/x.jpg')).split()
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()] 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-100').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-100'))  
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-100'))  
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002933718411'))  
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1003083281607'))  
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-100'))  
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-100')) 
 auth_grp = environ.get('AUTH_GROUP')
@@ -42,7 +42,7 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-100') 
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://yoket70070_db_user:Neymarjr@cluster0.jqgzosi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SilentXBotz_files')
 
@@ -51,10 +51,10 @@ MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type T
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 DB_CHANGE_LIMIT = int(environ.get('DB_CHANGE_LIMIT', "432")) 
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/')
-UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/MoviepubGroup')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CFUpdates')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/CFcontactbot')
+UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/moviemediachannel')
 
 AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "") # add multiple channels here, separated by single space
 AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '') # add multiple channels here, separated by single space
