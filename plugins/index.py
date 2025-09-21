@@ -236,7 +236,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
             elapsed = time.time() - start_time
             await msg.edit(
                 f"✅ Indexing Completed!\n"
-                f"💬 Total Message: <code>{total_messages}</code>a\n" 
+                f"💬 Total Message: <code>{total_messages}</code>\n" 
                 f"📥 Total Fetch: <code>{total_fetch}</code>\n"
                 f"⬇️ Fetched: <code>{current}</code>\n"
                 f"💾 Saved: <code>{total_files}</code>\n"
